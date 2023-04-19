@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>PSEUDO ELEMENTS</title>
+    <style>
+        div{
+            background-color: rgb(58, 107, 128);
+        }
+        .pseudo-element >p::first-line{
+            color: rgb(255, 23, 11);
+            padding: 5px;
+            font-size: 20px;
+            font-weight: bold;
+
+        }
+        .pseudo-element h1::after {
+            content: ":)";
+            color: chartreuse;
+        }
+        .pseudo-element h1::before {
+            content: "SECTION:";
+        }
+       ::selection{
+        background-color: firebrick;
+        color: cyan;
+       }
+
+    </style>
+</head>
+<body>
+    <div class="pseudo-element">
+        <h1>Adamsen Branay</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur sunt non, impedit ex tempore harum cupiditate         mollitia quod deserunt, nulla voluptas repudiandae adipisci unde. Quibusdam dolorem corrupti accusamus.</p>
+
+        <p>for example it can be used to</p>
+        <ul>
+            <li>Style the first letter,or line of an element</li>
+            <li>Insert content before or after the content of an element</li>
+        </ul>
+
+    </div>
+    
+</body>
+</html>
