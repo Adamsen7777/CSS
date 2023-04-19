@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title> CSS POSITION</title>
+    <style>
+        div{
+            background-color: rgba(42, 146, 206, 0.821);
+        }
+        .mt-5{
+            margin-top: 50px;
+        }
+        .static{
+            position: static;
+            border: 3px solid chartreuse;
+        }
+        .relative{
+            position: relative;
+            left: 20px;
+            border: 3px solid chartreuse;
+        }
+        .fixed{
+            position: fixed;
+            border: 3px solid chartreuse;
+            bottom:0%;
+            background-color: chartreuse;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+        }
+        .relatives{
+            position:relative;
+            border: 3px solid chartreuse;
+            left:40%;
+            width: 300px;
+            height: 200px;
+        }
+        .absolute{
+            position: absolute;
+            border: 3px solid chartreuse;
+            top: 80px;
+            right: 0;
+
+        }
+        .sticky{
+            position: -webkit-sticky;
+            border: 3px solid rgb(110, 199, 21);
+            background: chartreuse;
+            padding: 20px;
+            top: 0;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    
+    <div>
+    <div class="sticky mt-5" >
+        <h3>Message received</h3>
+        I am sticky! you are beautiful!
+
+    </div>
+    
+    <h1> CSS POSITIONS</h1>
+    <div class="static  mt-5">This is a static method</div>
+
+    <div class="relative  mt-5">This is a relative method</div>
+
+    <div class="fixed  mt-5">This is a fixed method can be used in footer</div>
+
+    <div class="relatives  mt-5">This div element has position relatives
+
+    <div class="absolute  mt-5"> This div element has position absolute</div>
+</div>
+
+</body>
+</html>
